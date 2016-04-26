@@ -8,14 +8,13 @@ class WheelOfFortune
   end
 
   def to_s
-    ltrs= @guesses.join.upcase
-    regex = "^[" + @guesses.join + ltrs  + "\s]"
+    regex = "^[" + @guesses.join  + "\s]"
     p @phrase
     p @phrase.tr(regex, "_")
   end
 
   def can_i_have?(guess)
-    @guesses.push(guess.downcase)
+    @guesses.push(guess.downcase, guess.upcase)
     @phrase.downcase.include? guess.downcase
   end
 
