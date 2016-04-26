@@ -30,7 +30,7 @@ Instance of `WheelOfFortune` will have three important methods:
 * making guesses ("Can I have a 'z'...?")
 * printing the game board ("Wh__l of Fortun_")
 * checking if the game is over (true/false)
- 
+
 Follow the tests to get started!
 
 ## Tips
